@@ -25,6 +25,7 @@ const login = async (req, res) => {
     };
 
     const token = generateToken(userObject); 
+    console.log(userObject, token, "Token generado")
     res.status(200).json({ message: "User logged in successfully", user: userObject, token });
     return true;
   } catch (error) {

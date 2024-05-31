@@ -1,0 +1,4 @@
+// .gitignore para ignorar archivos o directorios
+
+node_modules/
+.env
