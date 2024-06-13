@@ -20,7 +20,8 @@ const getTaskById = async (id) => {
 
 // eliminar tarea por id
 const deleteTask = async (id) => {
-    const query = "DELETE FROM Tareas WHERE id = ?";
+    // actuailzar el estado de la tarea
+    const query = "UPDATE Tareas SET estado = 0 WHERE id = ?";
     return await queries({ query, params: id });
 }
 
